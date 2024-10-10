@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 obj = {}
 header = []
 done = False
-for team in ['DAL', 'PHI', 'WSH', 'NYG']:
+for team in ['dal', 'phi', 'wsh', 'nyg']:
     url = f'https://www.espn.com/nfl/team/stats/_/name/{team}/season/2024'
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36'}
     r = requests.get(url=url, headers=headers)
