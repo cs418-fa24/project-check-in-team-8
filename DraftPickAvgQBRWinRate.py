@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-combined = pd.read_csv("combined.csv")
+combined = pd.read_csv("combinedQBStats.csv")
 
 qb_performance = combined.groupby("Name").agg(
     avg_QBR=("QBR", "mean"),
