@@ -2,8 +2,10 @@ import numpy as np
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+import time   
 
 obj = {}
+obj["Year_Drafted"] = []
 obj['Name'] = []
 obj['Draft Pick'] = []
 obj['Date'] = []    
@@ -48,7 +50,7 @@ for row in table.find_all('tr'):
 for link in links:
     gamelog_url = f'https://www.pro-football-reference.com{link}/gamelog/'
     gamelog_soup = BeautifulSoup(requests.get(gamelog_url, headers=headers).text, 'html.parser')
-
+    time.sleep(1.5)
     name = gamelog_soup.find('h1').text.strip()
     pick = pickDict[name]
 
@@ -57,7 +59,7 @@ for link in links:
         gs = week.find('td', {'data-stat' : 'gs'})
         if gs == None or gs.text.strip() != '*':
             continue
-
+        obj["Year_Drafted"].append(2020)
         obj['Name'].append(name)
         obj['Draft Pick'].append(pick)
 
