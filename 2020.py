@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import time   
 
 obj = {}
-obj["Year_Drafted"] = []
+obj["Year Drafted"] = []
 obj['Name'] = []
 obj['Draft Pick'] = []
 obj['Date'] = []    
@@ -28,7 +28,6 @@ draft_url = f'https://www.pro-football-reference.com/years/{year}/draft.htm'
 
 headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0"}
 response = requests.get(draft_url, headers=headers)
-
 soup = BeautifulSoup(response.text, 'html.parser')
 table = soup.find('tbody')
 
@@ -50,7 +49,7 @@ for row in table.find_all('tr'):
 for link in links:
     gamelog_url = f'https://www.pro-football-reference.com{link}/gamelog/'
     gamelog_soup = BeautifulSoup(requests.get(gamelog_url, headers=headers).text, 'html.parser')
-    time.sleep(1.5)
+    time.sleep(3)
     name = gamelog_soup.find('h1').text.strip()
     pick = pickDict[name]
 
@@ -59,7 +58,7 @@ for link in links:
         gs = week.find('td', {'data-stat' : 'gs'})
         if gs == None or gs.text.strip() != '*':
             continue
-        obj["Year_Drafted"].append(2020)
+        obj["Year Drafted"].append(2020)
         obj['Name'].append(name)
         obj['Draft Pick'].append(pick)
 
