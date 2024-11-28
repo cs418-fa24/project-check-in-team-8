@@ -10,12 +10,12 @@ obj['Name'] = []
 obj['Draft Pick'] = []
 obj['Date'] = []    
 obj['Game Result (W/L)'] = []
-obj['Passing Completions'] = []
+obj['Pass Completions'] = []
 obj['Passing Attempts'] = []
 obj['Passing Yards'] = []
 obj['Passing Touchdowns'] = []
 obj['Interceptions'] = []
-obj['Passer Rating'] = []
+obj['QBR'] = []
 obj['Times Sacked'] = []
 obj['Rushing Attempts'] = []
 obj['Rushing Yards'] = []
@@ -69,7 +69,7 @@ for link in links:
         obj['Game Result (W/L)'].append(result)
 
         comps = week.find('td', {'data-stat' : 'pass_cmp'}).text
-        obj['Passing Completions'].append(comps)
+        obj['Pass Completions'].append(comps)
 
         atts = week.find('td', {'data-stat' : 'pass_att'}).text
         obj['Passing Attempts'].append(atts)
@@ -84,7 +84,7 @@ for link in links:
         obj['Interceptions'].append(ints)
 
         qbr = week.find('td', {'data-stat' : 'pass_rating'}).text
-        obj['Passer Rating'].append(qbr)
+        obj['QBR'].append(qbr)
 
         sacks = week.find('td', {'data-stat' : 'pass_sacked'}).text
         obj['Times Sacked'].append(sacks)

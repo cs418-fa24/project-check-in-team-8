@@ -1,4 +1,4 @@
-,Year Drafted,Name,Draft Pick,Date,Game Result (W/L),Passing Completions,Passing Attempts,Passing Yards,Passing Touchdowns,Interceptions,Passer Rating,Times Sacked,Rushing Attempts,Rushing Yards,Rushing Touchdowns,Fumbles
+,Year Drafted,Name,Draft Pick,Date,Game Result (W/L),Pass Completions,Passing Attempts,Passing Yards,Passing Touchdowns,Interceptions,QBR,Times Sacked,Rushing Attempts,Rushing Yards,Rushing Touchdowns,Fumbles
 0,2020,Joe Burrow,1,2020-09-13,L,23,36,193,0,1,66.1,3,8,46,1,1
 1,2020,Joe Burrow,1,2020-09-17,L,37,61,316,3,0,90.6,3,7,19,0,2
 2,2020,Joe Burrow,1,2020-09-27,T,31,44,312,2,0,105.5,8,1,-1,0,0
