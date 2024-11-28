@@ -1,4 +1,4 @@
-,Year Drafted,Player,Pick,Game Date,Result,Pass Cmp,Pass Att,Pass Yds,Pass TD,Pass Int,Pass Rating,Pass Sacked,Rush Att,Rush Yds,Rush TD,Fumbles
+,Year Drafted,Name,Draft Pick,Date,Game Result (W/L),Pass Completions,Passing Attempts,Passing Yards,Passing Touchdowns,Interceptions,QBR,Times Sacked,Rushing Attempts,Rushing Yards,Rushing Touchdowns,Fumbles
 0,2016,Jared Goff,1,2016-11-20,L,17,31,134,0,0,65.8,1,4,11,0,0
 1,2016,Jared Goff,1,2016-11-27,L,20,32,214,3,1,100.3,3,0,0,0,1
 2,2016,Jared Goff,1,2016-12-04,L,14,32,161,1,2,43.9,4,1,-1,0,0
